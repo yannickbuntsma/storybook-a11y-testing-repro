@@ -1,0 +1,35 @@
+{
+  "name": "@yannick/ikki-ui",
+  "version": "0.1.0",
+  "description": "The design system library.",
+  "repository": "git@github.com:yannickbuntsma/ikki-ui.git",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": "^16"
+  },
+  "workspaces": [
+    "packages/*",
+    "config/*",
+    "tools/storybook"
+  ],
+  "scripts": {
+    "storybook": "yarn workspace @tools/storybook storybook",
+    "build-storybook": "yarn workspace @tools/storybook build",
+    "test-storybook": "yarn workspace @tools/storybook test-storybook"
+  },
+  "prettier": "@config/prettier",
+  "devDependencies": {
+    "@config/prettier": "workspace:*",
+    "@storybook/builder-vite": "0.3.0",
+    "@types/node": "17.0.14",
+    "turbo": "1.1.2",
+    "typescript": "4.7.4",
+    "vite": "3.1.2"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "packageManager": "yarn@3.4.1"
+}

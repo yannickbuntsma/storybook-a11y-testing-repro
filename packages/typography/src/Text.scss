@@ -1,0 +1,48 @@
+@use './Typography';
+
+@function rem($amount) {
+  @return calc(var(--ikki--font--size) * $amount);
+}
+
+.typography-text {
+  @include Typography.settings;
+
+  margin: 0;
+
+  /**
+   * TODO: Decide how to handle the vertical rhythm for typography, without impacting the layout when using a single Text component.
+   * Maybe we can use the Display component for that, or some "Prose" component that will apply typography rhythm to larger pieces of typography components.
+   */
+  // & + & {
+  //   margin-top: var(--ikki--size-0-5);
+  // }
+
+  &--body {
+    font-weight: var(--ikki--font--weight-regular);
+  }
+
+  &--body-head {
+    font-weight: var(--ikki--font--weight-medium);
+  }
+
+  &--caption {
+    font-size: rem(0.875); // Figma: 14px
+    line-height: 1.71; // Figma: 24px
+  }
+
+  &--caption-head {
+    font-weight: var(--ikki--font--weight-medium);
+    font-size: rem(0.875); // Figma: 14px
+    line-height: 1.71; // Figma: 24px
+  }
+
+  &--link {
+    font-weight: var(--ikki--font--weight-medium);
+    line-height: 1.75; // Figma: 28px
+    text-decoration: underline;
+  }
+
+  &--list {
+    line-height: 1.3125; // Figma: 21px
+  }
+}

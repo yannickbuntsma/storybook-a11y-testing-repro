@@ -1,0 +1,6 @@
+.eslintrc.cjs
+dist/
+node_modules/
+
+# Don't ignore .storybook directory
+!/.storybook

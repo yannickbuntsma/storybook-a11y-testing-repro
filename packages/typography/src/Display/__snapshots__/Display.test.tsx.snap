@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display Basic component behaviour should match snapshot 1`] = `
+<div>
+  <h1
+    class="typography-display test-class"
+    data-t="typography-display"
+  >
+    <div>
+      test
+    </div>
+  </h1>
+</div>
+`;

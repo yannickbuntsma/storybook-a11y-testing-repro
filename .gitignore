@@ -1,0 +1,42 @@
+# Editors
+.vscode
+.vim
+
+# .env files
+.env
+
+# Generated files
+__generated__/
+
+# yarn v2
+/.yarn/*
+!/.yarn/patches
+!/.yarn/plugins
+!/.yarn/releases
+!/.yarn/sdks
+
+# Swap the comments on the following lines if you don't wish to use zero-installs
+# Documentation here: https://yarnpkg.com/features/zero-installs
+# !/.yarn/cache
+/.pnp.*
+
+# When nodeLinker is set to node_modules
+node_modules
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Compiled output
+dist/
+**/dist/
+
+# Typescript composite/incremental cache
+*.tsbuildinfo
+
+# Turborepo
+.turbo
+
+# Storybook
+build-storybook.log
+storybook-static/

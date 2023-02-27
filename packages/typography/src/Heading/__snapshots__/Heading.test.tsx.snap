@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading Basic component behaviour should match snapshot 1`] = `
+<div>
+  <h1
+    class="typography-heading typography-heading--large test-class"
+    data-t="typography-heading"
+  >
+    <div>
+      test
+    </div>
+  </h1>
+</div>
+`;

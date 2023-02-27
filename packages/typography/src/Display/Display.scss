@@ -1,0 +1,9 @@
+@use '../Typography';
+
+.typography-display {
+  @include Typography.headers-base;
+  @include Typography.settings;
+
+  line-height: 1.43; // Figma: 96px
+  font-size: 4.1875rem; // Figma: 67px
+}

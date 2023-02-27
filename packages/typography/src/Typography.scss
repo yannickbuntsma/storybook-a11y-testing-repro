@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Orgon';
+  src: url('https://assets.yannick.io/global/orgon-regular.woff2') format('woff2'),
+    url('https://assets.yannick.io/global/orgon-regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Orgon';
+  src: url('https://assets.yannick.io/global/orgon-medium.woff2') format('woff2'),
+    url('https://assets.yannick.io/global/orgon-medium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Orgon';
+  src: url('https://assets.yannick.io/global/orgon-bold.woff2') format('woff2'),
+    url('https://assets.yannick.io/global/orgon-bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@mixin settings {
+  font-family: var(--ikki--font--family-body);
+  font-weight: var(--ikki--font--weight-regular);
+  font-size: var(--ikki--font--size); // Figma: 16px
+  line-height: 1.75; // Figma: 28px
+
+  &--align-left {
+    text-align: left;
+  }
+
+  &--align-center {
+    text-align: center;
+  }
+
+  &--align-right {
+    text-align: right;
+  }
+
+  &--color-primary {
+    color: var(--color--primary, purple);
+  }
+
+  &--color-secondary {
+    color: var(--color--secondary, seagreen);
+  }
+
+  &--color-text-primary {
+    color: var(--color--text-primary, purple);
+  }
+
+  &--color-text-secondary {
+    color: var(--color--text-secondary, seagreen);
+  }
+
+  &--color-alt {
+    color: var(--color--text-alt, aquamarine);
+  }
+}
+
+@mixin headers-base {
+  font-family: var(--ikki--font--family-headers);
+  font-weight: var(--ikki--font--weight-bold);
+  margin-top: 0;
+  margin-bottom: var(--ikki--space-1);
+}

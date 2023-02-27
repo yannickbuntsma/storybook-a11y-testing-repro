@@ -1,0 +1,74 @@
+@use '../Typography';
+
+:root {
+  --color--text-headings: var(--color--text-primary);
+}
+
+.typography-heading {
+  @include Typography.headers-base;
+  @include Typography.settings;
+
+  color: var(--color--text-headings);
+
+  &--large {
+    font-size: 2rem; // Figma: 32px
+    line-height: 1.5; // Figma: 48px
+
+    // @include tools.breakpoint(tablet-portrait-up) {
+    //   font-size: 2.5rem; // Figma: 40px
+    //   line-height: 1.4; // Figma: 56px
+    // }
+
+    // @include tools.breakpoint(tablet-landscape-up) {
+    //   font-size: 3rem; // Figma: 48px
+    //   line-height: 1.3333333; // Figma: 64px
+    // }
+  }
+
+  &--medium {
+    font-size: 1.75rem; // Figma: 28px
+    line-height: 1.4285; // Figma: 40px
+
+    // @include tools.breakpoint(tablet-portrait-up) {
+    //   font-size: 2rem; // Figma: 32px
+    //   line-height: 1.5; // Figma: 48px
+    // }
+
+    // @include tools.breakpoint(tablet-landscape-up) {
+    //   font-size: 2.5rem; // Figma: 40px
+    //   line-height: 1.4; // Figma: 56px
+    // }
+  }
+
+  &--small {
+    font-size: 1.5rem; // Figma: 24px
+    line-height: 1.5; // Figma: 36px
+
+    // @include tools.breakpoint(tablet-portrait-up) {
+    //   font-size: 1.75rem; // Figma: 28px
+    //   line-height: 1.571428; // Figma: 44px
+    // }
+  }
+
+  &--smallest {
+    font-size: 1.25rem; // Figma: 20px
+    line-height: 1.6; // Figma: 32px
+
+    // @include tools.breakpoint(tablet-portrait-up) {
+    //   font-size: 1.5rem; // Figma: 24px
+    //   line-height: 1.5; // Figma: 36px
+    // }
+  }
+
+  &--subheading1 {
+    font-size: 1.125rem; // Figma: 18px
+    line-height: 1.55555; // Figma: 28px
+    font-weight: var(--font--weight-medium);
+  }
+
+  &--subheading2 {
+    font-size: 1rem; // Figma: 16px
+    line-height: 1.5; // Figma: 24px
+    font-weight: var(--font--weight-medium);
+  }
+}

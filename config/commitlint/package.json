@@ -1,0 +1,19 @@
+{
+  "name": "@config/commitlint",
+  "version": "0.0.0",
+  "main": "index.js",
+  "private": true,
+  "type": "commonjs",
+  "prettier": "@config/prettier",
+  "devDependencies": {
+    "@commitlint/types": "17.0.0",
+    "@config/eslint": "workspace:*",
+    "@config/prettier": "workspace:*",
+    "@config/tsconfig": "workspace:*",
+    "prettier": "2.5.1"
+  },
+  "dependencies": {
+    "@commitlint/config-conventional": "17.2.0",
+    "@commitlint/config-lerna-scopes": "17.2.1"
+  }
+}
